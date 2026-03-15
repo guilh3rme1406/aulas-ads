@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.demo-section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.pagination ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #ddd;
+    color: #666;
+    text-decoration: none;
+    background-color: #f8f9fa;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+
+.pagination li:not(:first-child) a {
+    border-left: none;
+}
+
+
+.pagination li:first-child a {
+    border-radius: 8px 0 0 8px;
+}
+
+.pagination li:last-child a {
+    border-radius: 0 8px 8px 0;
+}
+
+.pagination.normal a:hover {
+    background-color: #f8f9fa; 
+    border-color: #ddd; 
+    color: #666; 
+    transform: none; 
+    box-shadow: none; 
+    cursor: default; 
+}
+
+.pagination.interactive a:hover {
+    background-color: #10b981;
+    border-color: #059669;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+    z-index: 1;
+}
